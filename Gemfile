@@ -33,7 +33,7 @@ gem 'rubocop'
 gem "binding_of_caller"
 gem 'htmlbeautifier', '~> 1.1', '>= 1.1.1'
 gem 'bootstrap', '~> 4.4.1'
-
+gem 'pry'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 
