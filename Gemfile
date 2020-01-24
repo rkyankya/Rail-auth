@@ -31,6 +31,7 @@ gem 'sinatra'
 gem 'rspec-core', '~> 3.9', '>= 3.9.1'
 gem 'rubocop'
 gem "binding_of_caller"
+gem 'htmlbeautifier', '~> 1.1', '>= 1.1.1'
 gem 'bootstrap', '~> 4.4.1'
 
 # Use Active Storage variant
