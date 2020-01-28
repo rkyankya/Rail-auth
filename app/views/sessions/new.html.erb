@@ -1,11 +1,15 @@
 <h1>Sessions#new</h1>
 <p>Find me in app/views/sessions/new.html.erb</p>
 
-<%= form_tag('/sessions', method: 'POST') do |f| %>
-    
-    <%= f.label :username %><br>
-    <%= f.text_field :username, class: 'form-control' %>
-
-    <%=  f.label :password %><br>
-    <%=  f.password_field :password, class: 'form-control' %> 
-<% end %>
+<form accept-charset="UTF-8" action="/sessions" data-remote="true" method="post">
+  <input name="authenticity_token" type="hidden" value="<%= form_authenticity_token %>">
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input class="form-control" id="username" name="username" type="username">
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input class="form-control" id="password" name="password" type="password">
+  </div>
+  <input class="btn btn-secondary" name="commit" type="submit" value="Login">
+</form>

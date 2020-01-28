@@ -2,3 +2,6 @@
 <p>Find me in app/views/users/show.html.erb</p>
 
 <h1>Hey  <%= @user.username%> </h1>
+
+<%# <a class="btn btn-primary" href="#" role="button">Log Out</a> %>
+<%= link_to('Log Out', session_path, method: "DELETE") %>
